@@ -6,7 +6,7 @@
 	float:left;
 }
 .firstright{
-	float:right;
+    float:right;
 }
 /* Add color and style to the website */
 main {
@@ -84,6 +84,19 @@ input[type=submit] {
     cursor: pointer;
     font-family: Arial, sans-serif;
 }
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); /*dynamic grid */
+    gap: 10px;
+    background-color: #a7ae73;
+
+}
+.video-embed{
+    background-color:  #a7ae73;
+    justify-content:center;
+    border: 2px solid hsl(0, 34%, 47%); /* Add a border for better visibility */
+}
+
 /*media query for larger screen*/
 @media (min-width:900px){
 img {
@@ -94,7 +107,13 @@ img {
     width: 37%;
 	height: 20%;
 }
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); /*dynamic grid */
+    gap: 10px;
+    background-color: rgb(198, 210, 103);
 
+}
 }
 /*media query for smaller screen*/
 @media (max-width:780px){
@@ -106,5 +125,8 @@ body img {
     width: 100%;
     height: 50%;
 }
+.container{
+    display: block;
 
+}
 }
